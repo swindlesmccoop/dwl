@@ -32,8 +32,6 @@ wlr-layer-shell-unstable-v1-protocol.h:
 	$(WAYLAND_SCANNER) server-header \
 		protocols/wlr-layer-shell-unstable-v1.xml $@
 
-config.h:
-	cp config.def.h $@
 clean:
 	rm -f dwl *.o *-protocol.h
 
